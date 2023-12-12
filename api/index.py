@@ -16,6 +16,3 @@ def post():
         if comment != "":
             comments.append(comment)
     return render_template('post.html', comments=comments)
-
-if __name__ == "__main__":
-    app.run(debug=True)
